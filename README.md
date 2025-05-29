@@ -13,3 +13,9 @@ This SSIS package demonstrates how to implement error redirection when importing
 1. Open the solution in Visual Studio with SSDT. I have utilised visual studio 2019 edition.
 2. Update the connection strings as per your environment and files available.
 3. Run the package.
+
+## Notes
+
+- This project is meant for educational purposes only. 
+- Make sure your source files and database and file paths are configured before running the package.
+- 
