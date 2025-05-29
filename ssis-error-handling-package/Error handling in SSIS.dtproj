@@ -22,8 +22,8 @@
           <SSIS:Property SSIS:Name="VersionComments">
           </SSIS:Property>
           <SSIS:Property SSIS:Name="CreationDate">2025-05-21T14:41:55.7390594+05:30</SSIS:Property>
-          <SSIS:Property SSIS:Name="CreatorName">RADHE_RADHE\Acer</SSIS:Property>
-          <SSIS:Property SSIS:Name="CreatorComputerName">RADHE_RADHE</SSIS:Property>
+          <SSIS:Property SSIS:Name="CreatorName">replace_your_system_name\Acer</SSIS:Property>
+          <SSIS:Property SSIS:Name="CreatorComputerName">replace_your_system_name</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
           <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzg13d1qKJkeWzkPquT5mWwAAAAACAAAAAAAQZgAAAAEAACAAAADvl8afzuSSGWTKRnW3tGv5md50nuqZ/dXkKBQxnj15IAAAAAAOgAAAAAIAACAAAABOwhLHEepncPAe52lLF+SNet5KQwwUcs8zMxZDC4cnlpAAAABlBVW/s6o8+s3Tx4CQQLEQTNh4v/JYQV6k78LhoKTqJptYTd8B6pA2o3U7095pgyR71NnRHPY3PwH3Qy+v79tm7UrJQWXndavAFMAbHK32Vl4/JP3UCa8FMg53o2r705mixLZHR/KghewM4//09IH7aoEbQv9YZuV78XUwu0Lau2s//dl9vC6croynyXtCcoJAAAAA0mzilEA7776d/jpCKPigSjwCWuQ9QpXMwFmole8H9vHM9BRQnvQvSmxjJrr3T0tJVs5po6iKTZG2NRwjSny0gA==</SSIS:Property>
@@ -442,7 +442,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -457,7 +457,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -468,11 +468,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=RADHE_RADHE\SQLSERVER_2008R2;Initial Catalog=AdventureWorksDW2008R2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{CD40F89A-9DB1-4549-A9C1-D80962F6768C}RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=replace_your_sql_server_name\SQLSERVER_2008R2;Initial Catalog=AdventureWorksDW2008R2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{CD40F89A-9DB1-4549-A9C1-D80962F6768C}replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2;Auto Translate=False;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2.ConnectRetryCount">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2.ConnectRetryCount">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -487,7 +487,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2.ConnectRetryInterval">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2.ConnectRetryInterval">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -502,7 +502,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2.ConnectUsingManagedIdentity">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2.ConnectUsingManagedIdentity">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -517,7 +517,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2.InitialCatalog">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2.InitialCatalog">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -532,7 +532,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2.Password">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2.Password">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -546,7 +546,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2.RetainSameConnection">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -561,7 +561,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2.ServerName">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2.ServerName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -572,11 +572,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">RADHE_RADHE\SQLSERVER_2008R2</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">replace_your_sql_server_name\SQLSERVER_2008R2</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2.UserName">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -590,7 +590,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -605,7 +605,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -616,11 +616,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=RADHE_RADHE\SQLSERVER_2008R2;Initial Catalog=learning_ssis_etl_flows;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{5A64B52F-8940-421B-BFC1-EB4482D2C837}RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=replace_your_sql_server_name\SQLSERVER_2008R2;Initial Catalog=learning_ssis_etl_flows;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{5A64B52F-8940-421B-BFC1-EB4482D2C837}replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows;Auto Translate=False;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows.ConnectRetryCount">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows.ConnectRetryCount">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -635,7 +635,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows.ConnectRetryInterval">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows.ConnectRetryInterval">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -650,7 +650,7 @@
                     <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows.ConnectUsingManagedIdentity">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows.ConnectUsingManagedIdentity">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -665,7 +665,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows.InitialCatalog">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows.InitialCatalog">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -680,7 +680,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows.Password">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows.Password">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -694,7 +694,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows.RetainSameConnection">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -709,7 +709,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows.ServerName">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows.ServerName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -720,11 +720,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">RADHE_RADHE\SQLSERVER_2008R2</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">replace_your_sql_server_name\SQLSERVER_2008R2</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows.UserName">
+                <SSIS:Parameter SSIS:Name="CM.replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
