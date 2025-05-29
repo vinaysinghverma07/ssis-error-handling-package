@@ -1,0 +1,1777 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/21/2025 2:41:56 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="RADHE_RADHE"
+  DTS:CreatorName="RADHE_RADHE\Acer"
+  DTS:DTSID="{3D8ECCA3-618B-4F7E-8793-785F856A88FC}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="16393"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{4D58AC82-2B95-4853-BF6A-0E3B6D762330}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Error output destination Flat File Connection]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A5721341-172B-4156-9E50-124324625DD3}"
+      DTS:ObjectName="Error output destination Flat File Connection">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowsToSkip="1"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\Learnings\SSIS Learnings\Error Handling in SSIS\Error output destination flat file\error_output_destination_flat_file.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EMPLOYEE_ID"
+              DTS:DTSID="{A50BBDB8-40CD-427B-940D-A0201B5DA16E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FIRST_NAME"
+              DTS:DTSID="{C862F277-4332-48E4-B557-BC1B96F3CB49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LAST_NAME"
+              DTS:DTSID="{D4E1C6F4-F43A-4173-AC6B-BD94E3D08A7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EMAIL"
+              DTS:DTSID="{84ABBC2D-3BB9-46E8-ABDD-DAE60F48C194}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHONE_NUMBER"
+              DTS:DTSID="{7569E32D-0BC5-4D3D-9133-01C325C9F763}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HIRE_DATE"
+              DTS:DTSID="{2238AE76-F08F-439A-99C5-68F75A312818}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JOB_ID"
+              DTS:DTSID="{D4C90224-A2FE-49A8-97E5-256DB0B291DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SALARY"
+              DTS:DTSID="{35E574F8-036C-4978-A116-4F72805C05F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COMMISSION_PCT"
+              DTS:DTSID="{7341678A-421D-46BA-94FA-0284595BF45C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MANAGER_ID"
+              DTS:DTSID="{6599DCCC-B64D-492E-B261-3268BE2C1FA9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEPARTMENT_ID"
+              DTS:DTSID="{AC69B9F4-9C1E-4087-91FF-513887939FCE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{7752EC79-8AED-46CE-A269-DB7D58CC7FB5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{534B9A2B-3FA1-4AF2-88C1-98153D6C47E4}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C2285E19-3663-4DD3-AFB7-2F67BB0A4D6F}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\Learnings\SSIS Learnings\Error Handling in SSIS\Sample file downloaded from github\employees.txt.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EMPLOYEE_ID"
+              DTS:DTSID="{26F50C63-F8C6-4CEE-B756-AB91FC7643F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FIRST_NAME"
+              DTS:DTSID="{A3F579FB-75C1-4682-813D-26EADBEFF161}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LAST_NAME"
+              DTS:DTSID="{3C5B0124-8FDA-4085-8562-FF2492EF7C1A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EMAIL"
+              DTS:DTSID="{CE8001E4-F076-4723-883A-62B6629CD895}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PHONE_NUMBER"
+              DTS:DTSID="{E125001C-C0D9-4DAC-9A76-AC88100611FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HIRE_DATE"
+              DTS:DTSID="{95F96D07-CC85-4544-9598-065BDA789255}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JOB_ID"
+              DTS:DTSID="{2FBB9E65-849D-47CF-BCCC-4738A95A45E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SALARY"
+              DTS:DTSID="{D524E025-0580-4663-B805-7EB472453EFE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COMMISSION_PCT"
+              DTS:DTSID="{23AF49E8-C596-4D73-99A4-A74916893350}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MANAGER_ID"
+              DTS:DTSID="{7CF6E31C-22E2-400C-BEAD-5E8EA550D7C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEPARTMENT_ID"
+              DTS:DTSID="{C0436C85-FAF2-4B27-BBB3-41AF231BE3EC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CD40F89A-9DB1-4549-A9C1-D80962F6768C}"
+      DTS:ObjectName="RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=RADHE_RADHE\SQLSERVER_2008R2;Initial Catalog=AdventureWorksDW2008R2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{CD40F89A-9DB1-4549-A9C1-D80962F6768C}RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5A64B52F-8940-421B-BFC1-EB4482D2C837}"
+      DTS:ObjectName="RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=RADHE_RADHE\SQLSERVER_2008R2;Initial Catalog=learning_ssis_etl_flows;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{5A64B52F-8940-421B-BFC1-EB4482D2C837}RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Learn Error handling"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{7B37A64B-BCEB-464E-8B3B-780012D95A6C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Learn Error handling"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Learn Error handling\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Learn Error handling\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Learn Error handling\Data Conversion.Inputs[Data Conversion Input].Columns[HIRE_DATE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="HIRE_DATE"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[HIRE_DATE]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Data Conversion.Inputs[Data Conversion Input].Columns[SALARY]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SALARY"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[SALARY]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Learn Error handling\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of HIRE_DATE]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of HIRE_DATE]"
+                      name="Copy of HIRE_DATE"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[HIRE_DATE]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of SALARY]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of SALARY]"
+                      name="Copy of SALARY"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[SALARY]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Learn Error handling\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Learn Error handling\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Learn Error handling\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Learn Error handling\Derived Column.Inputs[Derived Column Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Derived Column.Inputs[Derived Column Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Learn Error handling\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Learn Error handling\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Derived Column.Outputs[Derived Column Output].Columns[Error code and column]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="1001"
+                      lineageId="Package\Learn Error handling\Derived Column.Outputs[Derived Column Output].Columns[Error code and column]"
+                      name="Error code and column"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,500,1252)#{Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]} + "|" + (DT_STR,500,1252)#{Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,500,1252)ErrorCode + "|" + (DT_STR,500,1252)ErrorColumn</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Learn Error handling\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Learn Error handling\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Learn Error handling\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Learn Error handling\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Learn Error handling\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Learn Error handling\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="16393"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">false</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Learn Error handling\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Error output destination Flat File Connection]"
+                  connectionManagerRefId="Package.ConnectionManagers[Error output destination Flat File Connection]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[EMPLOYEE_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EMPLOYEE_ID"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EMPLOYEE_ID]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[EMPLOYEE_ID]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[FIRST_NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FIRST_NAME"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FIRST_NAME]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[FIRST_NAME]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[LAST_NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="LAST_NAME"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LAST_NAME]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[LAST_NAME]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[EMAIL]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EMAIL"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EMAIL]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[EMAIL]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[PHONE_NUMBER]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PHONE_NUMBER"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PHONE_NUMBER]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[PHONE_NUMBER]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[HIRE_DATE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="HIRE_DATE"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HIRE_DATE]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[HIRE_DATE]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[JOB_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="JOB_ID"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[JOB_ID]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[JOB_ID]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[SALARY]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SALARY"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SALARY]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[SALARY]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[COMMISSION_PCT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="COMMISSION_PCT"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[COMMISSION_PCT]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[COMMISSION_PCT]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[MANAGER_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MANAGER_ID"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MANAGER_ID]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[MANAGER_ID]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[DEPARTMENT_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DEPARTMENT_ID"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DEPARTMENT_ID]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[DEPARTMENT_ID]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EMPLOYEE_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EMPLOYEE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[FIRST_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FIRST_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LAST_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LAST_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EMAIL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EMAIL" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PHONE_NUMBER]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHONE_NUMBER" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[HIRE_DATE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="HIRE_DATE" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[JOB_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="JOB_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SALARY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SALARY" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[COMMISSION_PCT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="COMMISSION_PCT" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[MANAGER_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MANAGER_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DEPARTMENT_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DEPARTMENT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Learn Error handling\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="16393"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Learn Error handling\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[EMPLOYEE_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EMPLOYEE_ID]"
+                      length="50"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[EMPLOYEE_ID]"
+                      name="EMPLOYEE_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[FIRST_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FIRST_NAME]"
+                      length="50"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[FIRST_NAME]"
+                      name="FIRST_NAME"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[LAST_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LAST_NAME]"
+                      length="50"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[LAST_NAME]"
+                      name="LAST_NAME"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[EMAIL]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EMAIL]"
+                      length="50"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[EMAIL]"
+                      name="EMAIL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[PHONE_NUMBER]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PHONE_NUMBER]"
+                      length="50"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[PHONE_NUMBER]"
+                      name="PHONE_NUMBER"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[HIRE_DATE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HIRE_DATE]"
+                      length="50"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[HIRE_DATE]"
+                      name="HIRE_DATE"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[JOB_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JOB_ID]"
+                      length="50"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[JOB_ID]"
+                      name="JOB_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[SALARY]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SALARY]"
+                      length="50"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[SALARY]"
+                      name="SALARY"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[COMMISSION_PCT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMMISSION_PCT]"
+                      length="50"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[COMMISSION_PCT]"
+                      name="COMMISSION_PCT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[MANAGER_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MANAGER_ID]"
+                      length="50"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[MANAGER_ID]"
+                      name="MANAGER_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[DEPARTMENT_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEPARTMENT_ID]"
+                      length="50"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[DEPARTMENT_ID]"
+                      name="DEPARTMENT_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EMPLOYEE_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EMPLOYEE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FIRST_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FIRST_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LAST_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LAST_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EMAIL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EMAIL" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PHONE_NUMBER]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHONE_NUMBER" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[HIRE_DATE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="HIRE_DATE" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JOB_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="JOB_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SALARY]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="SALARY" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMMISSION_PCT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="COMMISSION_PCT" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MANAGER_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MANAGER_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEPARTMENT_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DEPARTMENT_ID" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Learn Error handling\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[employees_table_for_error_handling]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">CREATE TABLE learning_ssis_etl_flows.dbo.[OLE DB Destination] (
+	id INT IDENTITY(1,1) PRIMARY KEY,
+    [EMPLOYEE_ID] varchar(50),
+    [FIRST_NAME] varchar(50),
+    [LAST_NAME] varchar(50),
+    [EMAIL] varchar(50),
+    [PHONE_NUMBER] varchar(50),
+    [HIRE_DATE] datetime,
+    [JOB_ID] varchar(50),
+    [SALARY] money,
+    [COMMISSION_PCT] varchar(50),
+    [MANAGER_ID] varchar(50),
+    [DEPARTMENT_ID] varchar(50),
+	created_date datetime default current_Timestamp,
+	created_by varchar(50),
+	modified_date datetime,
+	modified_by varchar(50)
+)</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Learn Error handling\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows]"
+                  connectionManagerRefId="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EMPLOYEE_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EMPLOYEE_ID"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EMPLOYEE_ID]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[EMPLOYEE_ID]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FIRST_NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="FIRST_NAME"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FIRST_NAME]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[FIRST_NAME]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LAST_NAME]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="LAST_NAME"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LAST_NAME]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[LAST_NAME]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EMAIL]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="EMAIL"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EMAIL]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[EMAIL]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PHONE_NUMBER]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PHONE_NUMBER"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PHONE_NUMBER]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[PHONE_NUMBER]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[JOB_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="JOB_ID"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JOB_ID]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[JOB_ID]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COMMISSION_PCT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="COMMISSION_PCT"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMMISSION_PCT]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[COMMISSION_PCT]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MANAGER_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MANAGER_ID"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MANAGER_ID]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[MANAGER_ID]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEPARTMENT_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="DEPARTMENT_ID"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTMENT_ID]"
+                      lineageId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output].Columns[DEPARTMENT_ID]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of HIRE_DATE]"
+                      cachedDataType="date"
+                      cachedName="Copy of HIRE_DATE"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HIRE_DATE]"
+                      lineageId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of HIRE_DATE]" />
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of SALARY]"
+                      cachedDataType="cy"
+                      cachedName="Copy of SALARY"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SALARY]"
+                      lineageId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of SALARY]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EMPLOYEE_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EMPLOYEE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FIRST_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="FIRST_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LAST_NAME]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="LAST_NAME" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EMAIL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="EMAIL" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PHONE_NUMBER]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHONE_NUMBER" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HIRE_DATE]"
+                      dataType="dbTimeStamp"
+                      name="HIRE_DATE" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JOB_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="JOB_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SALARY]"
+                      dataType="cy"
+                      name="SALARY" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMMISSION_PCT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="COMMISSION_PCT" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MANAGER_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MANAGER_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTMENT_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="DEPARTMENT_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[created_date]"
+                      dataType="dbTimeStamp"
+                      name="created_date" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[created_by]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="created_by" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[modified_date]"
+                      dataType="dbTimeStamp"
+                      name="modified_date" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[modified_by]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="modified_by" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Learn Error handling\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Learn Error handling\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Learn Error handling\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Learn Error handling\OLE DB Destination 2"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 2"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[error_logs]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Learn Error handling\OLE DB Destination 2.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows]"
+                  connectionManagerRefId="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input].Columns[Error code and column]"
+                      cachedDataType="wstr"
+                      cachedLength="1001"
+                      cachedName="Error code and column"
+                      externalMetadataColumnId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[error_message]"
+                      lineageId="Package\Learn Error handling\Derived Column.Outputs[Derived Column Output].Columns[Error code and column]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[error_message]"
+                      dataType="wstr"
+                      length="500"
+                      name="error_message" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[log_time]"
+                      dataType="dbTimeStamp"
+                      name="log_time" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[created_by]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="created_by" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[created_time]"
+                      dataType="dbTimeStamp"
+                      name="created_time" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[modified_by]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="modified_by" />
+                    <externalMetadataColumn
+                      refId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[modified_date]"
+                      dataType="dbTimeStamp"
+                      name="modified_date" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Learn Error handling\OLE DB Destination 2.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination 2.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Learn Error handling\OLE DB Destination 2.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Learn Error handling\OLE DB Destination 2.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Learn Error handling\OLE DB Destination 2.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Learn Error handling.Paths[Data Conversion Error Output]"
+              endId="Package\Learn Error handling\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Data Conversion Error Output"
+              startId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Error Output]" />
+            <path
+              refId="Package\Learn Error handling.Paths[Data Conversion Output]"
+              endId="Package\Learn Error handling\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Learn Error handling\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Learn Error handling.Paths[Derived Column Output]"
+              endId="Package\Learn Error handling\OLE DB Destination 2.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Learn Error handling\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Learn Error handling.Paths[Flat File Source Error Output]"
+              endId="Package\Learn Error handling\Derived Column.Inputs[Derived Column Input]"
+              name="Flat File Source Error Output"
+              startId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Error Output]" />
+            <path
+              refId="Package\Learn Error handling.Paths[Flat File Source Output]"
+              endId="Package\Learn Error handling\Data Conversion.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Learn Error handling\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Learn Error handling"
+          TopLeft="270,175" />
+        <AnnotationLayout
+          Text="Source -&gt; https://www.sqlshack.com/an-overview-of-error-handling-in-ssis-package/"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="480,40"
+          Id="31f2cb24-456c-49bd-a080-f116fa5713fb"
+          TopLeft="143,76" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Learn Error handling">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Learn Error handling\Derived Column"
+          TopLeft="414.75,219.25" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Learn Error handling\OLE DB Destination"
+          TopLeft="61,475.5" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Learn Error handling\Flat File Source"
+          TopLeft="65,219" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\Learn Error handling\OLE DB Destination 2"
+          TopLeft="716.5,216.5" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Learn Error handling\Data Conversion"
+          TopLeft="62,380" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Learn Error handling\Flat File Destination"
+          TopLeft="407.25,380.25" />
+        <EdgeLayout
+          Id="Package\Learn Error handling.Paths[Flat File Source Output]"
+          TopLeft="140.5,261">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-25.1666666666667,119"
+              Start="0,0"
+              End="-25.1666666666667,111.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.6751269035533" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,66.6751269035533"
+                    Point2="0,70.6751269035533"
+                    Point3="-4,70.6751269035533" />
+                  <mssgle:LineSegment
+                    End="-21.1666666666667,70.6751269035533" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-21.1666666666667,70.6751269035533"
+                    Point2="-25.1666666666667,70.6751269035533"
+                    Point3="-25.1666666666667,74.6751269035533" />
+                  <mssgle:LineSegment
+                    End="-25.1666666666667,111.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-72.5933723958333,75.6751269035533,120.020078125,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Learn Error handling.Paths[Flat File Source Error Output]"
+          TopLeft="216,240.125">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="198.75,0"
+              Start="0,0"
+              End="191.25,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="191.25,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="31.99861328125,5,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Learn Error handling.Paths[Derived Column Output]"
+          TopLeft="568.75,238.875">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="147.75,0"
+              Start="0,0"
+              End="140.25,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="140.25,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Learn Error handling.Paths[Data Conversion Output]"
+          TopLeft="143.25,422">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53.5"
+              Start="0,0"
+              End="0,46">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Learn Error handling.Paths[Data Conversion Error Output]"
+          TopLeft="218,401.125">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="189.25,0"
+              Start="0,0"
+              End="181.75,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="181.75,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="24.78861328125,5,132.1727734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelinePath
+    design-time-name="Package\Learn Error handling.Paths[Flat File Source Output]">
+    <PathAnnotation>SourceName</PathAnnotation>
+  </PipelinePath>
+  <PipelineComponentMetadata
+    design-time-name="Package\Learn Error handling\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Learn Error handling\OLE DB Destination 2">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
