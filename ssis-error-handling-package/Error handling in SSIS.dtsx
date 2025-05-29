@@ -3,8 +3,8 @@
   DTS:refId="Package"
   DTS:CreationDate="5/21/2025 2:41:56 PM"
   DTS:CreationName="Microsoft.Package"
-  DTS:CreatorComputerName="RADHE_RADHE"
-  DTS:CreatorName="RADHE_RADHE\Acer"
+  DTS:CreatorComputerName="replace_your_system_name"
+  DTS:CreatorName="replace_your_system_name\Acer"
   DTS:DTSID="{3D8ECCA3-618B-4F7E-8793-785F856A88FC}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5035.3"
@@ -272,27 +272,27 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2]"
+      DTS:refId="Package.ConnectionManagers[replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{CD40F89A-9DB1-4549-A9C1-D80962F6768C}"
-      DTS:ObjectName="RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2">
+      DTS:ObjectName="replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=RADHE_RADHE\SQLSERVER_2008R2;Initial Catalog=AdventureWorksDW2008R2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{CD40F89A-9DB1-4549-A9C1-D80962F6768C}RADHE_RADHE\SQLSERVER_2008R2.AdventureWorksDW2008R2;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=replace_your_sql_server_name\SQLSERVER_2008R2;Initial Catalog=AdventureWorksDW2008R2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{CD40F89A-9DB1-4549-A9C1-D80962F6768C}replace_your_sql_server_name\SQLSERVER_2008R2.AdventureWorksDW2008R2;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows]"
+      DTS:refId="Package.ConnectionManagers[replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{5A64B52F-8940-421B-BFC1-EB4482D2C837}"
-      DTS:ObjectName="RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows">
+      DTS:ObjectName="replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=RADHE_RADHE\SQLSERVER_2008R2;Initial Catalog=learning_ssis_etl_flows;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{5A64B52F-8940-421B-BFC1-EB4482D2C837}RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=replace_your_sql_server_name\SQLSERVER_2008R2;Initial Catalog=learning_ssis_etl_flows;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{5A64B52F-8940-421B-BFC1-EB4482D2C837}replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1168,8 +1168,8 @@
               <connections>
                 <connection
                   refId="Package\Learn Error handling\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows]"
-                  connectionManagerRefId="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows]"
+                  connectionManagerID="Package.ConnectionManagers[replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows]"
+                  connectionManagerRefId="Package.ConnectionManagers[replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1441,8 +1441,8 @@
               <connections>
                 <connection
                   refId="Package\Learn Error handling\OLE DB Destination 2.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows]"
-                  connectionManagerRefId="Package.ConnectionManagers[RADHE_RADHE\SQLSERVER_2008R2.learning_ssis_etl_flows]"
+                  connectionManagerID="Package.ConnectionManagers[replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows]"
+                  connectionManagerRefId="Package.ConnectionManagers[replace_your_sql_server_name\SQLSERVER_2008R2.learning_ssis_etl_flows]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
