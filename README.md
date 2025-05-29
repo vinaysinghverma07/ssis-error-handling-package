@@ -18,4 +18,4 @@ This SSIS package demonstrates how to implement error redirection when importing
 
 - This project is meant for educational purposes only. 
 - Make sure your source files and database and file paths are configured before running the package.
-- 
+- Please make sure to replace the "replace_your_system_name", "replace_your_sql_server_name" value with the appropriate values of your system/computer and sql server name.
